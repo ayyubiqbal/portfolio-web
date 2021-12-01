@@ -2,6 +2,10 @@ import React from 'react';
 import Tittle from '../Components/Tittle';
 import ImageSection from '../Components/ImageSection';
 import SkillsSection from '../Components/SkillsSection';
+import ServicesSection from '../Components/ServicesSection';
+import design from '../img/design.svg'
+import intelligence from '../img/intelligence.svg'
+import gamedev from '../img/game-dev.svg'
 
 const About = () => {
     return (
@@ -18,6 +22,12 @@ const About = () => {
                 <SkillsSection skill={'ExpressJS'} progress={'65%'} width={"65%"} />
                 <SkillsSection skill={'MongoDB'} progress={'70%'} width={"70%"} />
                 <SkillsSection skill={'Figma'} progress={'50%'} width={"50%"} />
+            </div>
+            <Tittle title="Services" span={"Services"} />
+            <div className="services-container">
+                <ServicesSection image={design} title={'Web Development'} text={"Lorem ipsum dolor sit amet consectetur."} />
+                <ServicesSection image={intelligence} title={'Artificial Intelligence'} text={"Lorem ipsum dolor sit amet consectetur."} />
+                <ServicesSection image={gamedev} title={'Game Development'} text={"Lorem ipsum dolor sit amet consectetur."} />
             </div>
         </div>
     );
