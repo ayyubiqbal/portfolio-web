@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import avatar from '../img/iqbal2.png';
+import avatar from '../img/avatar.png';
 
 const NavBar = () => {
     return (

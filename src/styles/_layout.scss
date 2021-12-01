@@ -4,11 +4,17 @@
         height: 100vh;
         background-color: #191d2b;
         position: fixed;
+        border-right: 5px solid #2e344e;
     }
     .main-content{
         width: 84%;
         margin-left: 16%;
         min-height: 100vh;
         background-color: #10121b;
+        // background-image: url(https://images.unsplash.com/photo-1536589961747-e239b2abbec2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+        // background-image: url("/./src/img/dots.svg");
+        background-image: url(../img/dots.svg);
+        display: grid;
+        position: relative;
     }
 }
