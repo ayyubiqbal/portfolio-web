@@ -1,10 +1,28 @@
 import React from 'react';
+import AllBlogs from '../Components/AllBlogs'
+import Tittle from '../Components/Tittle';
 
 const Blogs = () => {
     return (
-        <div>
-            <h2>Blogs</h2>
-        </div>
+        <>
+            <div className="blog-title">
+                <Tittle title="Blogs" span={"Blogs"} />
+            </div>
+            <div className="BlogPage">
+                {
+                    AllBlogs.map((blog) => {
+                        return <div className="blog" key={blog.id}>
+                            <div className="blog-content">
+                                <img src={blog.image} alt="" />
+                                <a href={blog.link} className="blog-link">
+                                    {blog.title}
+                                </a>
+                            </div>
+                        </div>
+                    })
+                }
+            </div>
+        </>
     );
 };
 

@@ -58,24 +58,6 @@ const blogs = [
         date: '09',
         month: 'Sep',
         year: '2019'
-    },
-    {
-        id: 7,
-        image: blog3,
-        title: 'Test Blogs data1',
-        link: 'https://www.facebook.com/',
-        date: '09',
-        month: 'Sep',
-        year: '2019'
-    },
-    {
-        id: 8,
-        image: blog1,
-        title: 'Test Blogs data2',
-        link: 'https://www.facebook.com/',
-        date: '09',
-        month: 'Sep',
-        year: '2019'
     }
 ];
 
