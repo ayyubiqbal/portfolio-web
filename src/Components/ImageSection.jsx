@@ -12,23 +12,20 @@ const ImageSection = () => {
                 <p className="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque beatae deserunt commodi eius officia ea voluptatem? Magnam expedita aliquid sit.
                 </p>
                 <div className="about-details">
-                    <div className="name-details">
+                    <div className="left-section">
                         <p>Full Name</p>
-                        <p>: Ayyub Iqbal</p>
-                    </div>
-                    <div className="name-details">
                         <p>Nationality</p>
-                        <p>: Bangladeshi</p>
-                    </div>
-                    <div className="name-details">
-                        <p>Languages</p>
-                        <p>: Bangla, English, Hindi, Urdu </p>
-                    </div>
-                    <div className="name-details">
                         <p>Address</p>
+                        <p>Languages</p>
+                    </div>
+                    <div className="right-section">
+                        <p>: Ayyub Iqbal</p>
+                        <p>: Bangladeshi</p>
                         <p>: Noakhali, Bangladesh</p>
+                        <p>: Bangla, English, Hindi, Urdu</p>
                     </div>
                 </div>
+                <button className="btn">Resume</button>
             </div>
         </div>
     );
