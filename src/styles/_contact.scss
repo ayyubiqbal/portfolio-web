@@ -28,6 +28,9 @@
     .contact-section{
         width: 100%;
     }
+    @media screen and (max-width: 1000px){
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .map-section{
@@ -37,6 +40,10 @@
     iframe{
         width: 100%;
         height: 100%;
+    }
+    @media screen and (max-width: 1000px){
+        margin-bottom: 2rem;
+        height: 30rem;
     }
 }
 

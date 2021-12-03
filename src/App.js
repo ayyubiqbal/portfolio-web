@@ -6,12 +6,23 @@ import About from './pages/About';
 import Portfolios from './pages/Portfolios';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
+import { useState } from 'react';
 
 function App() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
   return (
     <div className="App">
-      <div className="sidebar">
+      <div className={`sidebar ${isNavOpen ? 'nav-toggle' : ''}`}>
         <NavBar />
+      </div>
+      <div className="nav-btn" onClick={toggleNav}>
+        <div className="line-1"></div>
+        <div className="line-2"></div>
+        <div className="line-3"></div>
       </div>
       <div className="main-content">
         <div className="content">
