@@ -1,7 +1,7 @@
 import React from 'react';
-import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+// import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { Link } from 'react-router-dom';
 
 const HomePage = () => {
     return (
@@ -11,8 +11,16 @@ const HomePage = () => {
                     Hi, I am
                     <span> Ayyub Iqbal</span>
                 </h1>
-                <p className="h-sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus iste in quas voluptate odio corporis error, incidunt minus id nisi vitae. Sequi, vero ut. Laborum in omnis alias harum.</p>
-                <div className="icons">
+                <p className="h-sub-text">I am a web developer (MERN Stack) who enjoys connecting the dots. I have strong technical skills and an academic background in Computer Technology.
+
+                    I like to implement my knowledge to build innovative and ingenious products for consumers.</p>
+                <div className="resume-btn">
+                    {/* <button className="btn">Resume</button> */}
+                    <form action="https://drive.google.com/file/d/1QbFTrjKGeyhKF_Dq_2CbN73jZlV989GH/view?usp=sharing">
+                        <input className="btn" type="submit" value="Resume" />
+                    </form>
+                </div>
+                {/* <div className="icons">
                     <Link className="icon-holder">
                         <FontAwesomeIcon icon={faFacebook} className="icon fb" />
                     </Link>
@@ -22,7 +30,7 @@ const HomePage = () => {
                     <Link className="icon-holder">
                         <FontAwesomeIcon icon={faGithub} className="icon gh" />
                     </Link>
-                </div>
+                </div> */}
             </header>
         </div>
     );

@@ -6,6 +6,9 @@ import ServicesSection from '../Components/ServicesSection';
 import design from '../img/design.svg'
 import intelligence from '../img/intelligence.svg'
 import gamedev from '../img/game-dev.svg'
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -23,11 +26,22 @@ const About = () => {
                 <SkillsSection skill={'MongoDB'} progress={'70%'} width={"70%"} />
                 <SkillsSection skill={'Figma'} progress={'50%'} width={"50%"} />
             </div>
-            <Tittle title="Services" span={"Services"} />
+            {/* <Tittle title="Services" span={"Services"} />
             <div className="services-container">
                 <ServicesSection image={design} title={'Web Development'} text={"Lorem ipsum dolor sit amet consectetur."} />
                 <ServicesSection image={intelligence} title={'Artificial Intelligence'} text={"Lorem ipsum dolor sit amet consectetur."} />
                 <ServicesSection image={gamedev} title={'Game Development'} text={"Lorem ipsum dolor sit amet consectetur."} />
+            </div> */}
+            <div className="icons" >
+                <Link className="icon-holder" to="https://www.facebook.com/iqbal8/">
+                    <FontAwesomeIcon icon={faFacebook} className="icon fb" />
+                </Link>
+                <Link className="icon-holder">
+                    <FontAwesomeIcon icon={faLinkedin} className="icon li" />
+                </Link>
+                <Link className="icon-holder">
+                    <FontAwesomeIcon icon={faGithub} className="icon gh" />
+                </Link>
             </div>
         </div>
     );

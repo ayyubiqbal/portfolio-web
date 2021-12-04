@@ -8,7 +8,10 @@ const Blogs = () => {
             <div className="blog-title">
                 <Tittle title="Blogs" span={"Blogs"} />
             </div>
-            <div className="BlogPage">
+            <div className="blog-coming">
+                <h3>Blog Page Coming Soon</h3>
+            </div>
+            {/* <div className="BlogPage">
                 {
                     AllBlogs.map((blog) => {
                         return <div className="blog" key={blog.id}>
@@ -21,7 +24,7 @@ const Blogs = () => {
                         </div>
                     })
                 }
-            </div>
+            </div> */}
         </>
     );
 };
