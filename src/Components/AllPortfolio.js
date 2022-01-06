@@ -1,9 +1,6 @@
 import port1 from '../img/portImages/img1.png';
 import port2 from '../img/portImages/img2.png';
 import port3 from '../img/portImages/img3.png';
-// import port4 from '../img/portImages/port3.jpg';
-// import port6 from '../img/portImages/port5.jpg';
-// import port7 from '../img/portImages/port6.jpg';
 
 const portfolios = [
     {
@@ -36,38 +33,6 @@ const portfolios = [
         image: port3,
         title: 'Autodesk Maya'
     }
-    // ,
-    // {
-    //     id: 4,
-    //     category: 'Javascript',
-    //     link1: 'www.youtube.com',
-    //     link2: 'www.github.com',
-    //     icon1: 'G',
-    //     icon2: 'Y',
-    //     image: port4,
-    //     title: 'Vanilla Javascript Website'
-    // }
-    ,
-    // {
-    //     id: 5,
-    //     category: 'ReactJS',
-    //     link1: 'www.youtube.com',
-    //     link2: 'www.github.com',
-    //     icon1: 'G',
-    //     icon2: 'Y',
-    //     image: port6,
-    //     title: 'Getting Started With React'
-    // },
-    // {
-    //     id: 6,
-    //     category: 'ReactJS',
-    //     link1: 'www.youtube.com',
-    //     link2: 'www.github.com',
-    //     icon1: 'G',
-    //     icon2: 'Y',
-    //     image: port7,
-    //     title: 'Vanilla Javascript Website'
-    // }
 ]
 
 export default portfolios;
